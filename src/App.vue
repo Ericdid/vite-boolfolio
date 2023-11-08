@@ -31,6 +31,6 @@ export default {
 <template>
   <h1>Hello World</h1>
   <hr />
-  <ProjectCard />
+  <ProjectCard :projects="projects" />
 </template>
 <style lang="scss"></style>
