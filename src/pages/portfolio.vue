@@ -10,6 +10,7 @@ export default {
 </script>
 
 <template>
+  <h1>Lista Progetti</h1>
   <ProjectCard />
 </template>
 
