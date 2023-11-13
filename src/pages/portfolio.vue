@@ -3,16 +3,14 @@ import ProjectCard from "../components/ProjectCard.vue";
 
 export default {
   data() {
-    return {
-      title: "Hello world",
-    };
+    return {};
   },
   components: { ProjectCard },
 };
 </script>
 
 <template>
-  <h1><ProjectCard /></h1>
+  <ProjectCard />
 </template>
 
 <style lang="scss" scoped></style>
