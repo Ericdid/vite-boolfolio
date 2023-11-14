@@ -16,17 +16,17 @@ export default {
 
   components: { Navbar },
 
-  methods: {
-    fetchprojects(url = this.api.baseUrl + "projects") {
-      axios.get(url).then((response) => {
-        this.projects = response.data.projects;
-      });
-    },
-  },
+  // methods: {
+  //   fetchprojects(url = this.api.baseUrl + "projects") {
+  //     axios.get(url).then((response) => {
+  //       this.projects = response.data.projects;
+  //     });
+  //   },
+  // },
 
-  created() {
-    this.fetchprojects();
-  },
+  // created() {
+  //   this.fetchprojects();
+  // },
 };
 </script>
 
