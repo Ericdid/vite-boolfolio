@@ -17,8 +17,10 @@ export default {
         <div class="card h-100">
           <h2>{{ project.title }}</h2>
           <p>{{ project.content }}</p>
-          <a href="" class="align-self-end mt-auto me-2 mb-2 btn btn-primary"
-            >Dettagli</a
+          <router-link
+            :to="{ name: 'detail' }"
+            class="align-self-end mt-auto me-2 mb-2 btn btn-primary"
+            >Dettagli</router-link
           >
         </div>
       </div>
