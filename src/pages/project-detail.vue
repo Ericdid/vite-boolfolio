@@ -5,6 +5,7 @@ import axios from "axios";
 export default {
   data() {
     return {
+      project: {},
       api: {
         baseUrl: "http://127.0.0.1:8000/api/",
       },
@@ -17,7 +18,10 @@ export default {
 
   created(url = this.api.baseUrl) {
     console.log(url + "projects/" + this.$route.params.id);
-    axios.get(url + "projects/" + this.$route.params.id);
+    axios.get(url + "projects/" + this.$route.params.id).then((response) => {
+      //   console.log(response.data);
+      this.project = response.data;
+    });
   },
 };
 </script>
@@ -25,8 +29,8 @@ export default {
 <template>
   <div class="container">
     <h1 class="my-3">Dettaglio Progetto</h1>
-    <p>{{ this.$route.params.id }}</p>
-    <!-- <ProjectCard /> -->
+    <!-- <p>{{ this.$route.params.id }}</p> -->
+    <ProjectCard :project="project" />
   </div>
 </template>
 
