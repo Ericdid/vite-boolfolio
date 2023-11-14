@@ -18,7 +18,7 @@ export default {
           <h2>{{ project.title }}</h2>
           <p>{{ project.content }}</p>
           <router-link
-            :to="{ name: 'detail' }"
+            :to="{ name: 'detail', params: { id: project.id } }"
             class="align-self-end mt-auto me-2 mb-2 btn btn-primary"
             >Dettagli</router-link
           >

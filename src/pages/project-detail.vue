@@ -1,21 +1,20 @@
 <script>
-// import MyComponent from "./components/MyComponent.vue";
+import ProjectCard from "../components/projects/ProjectCard.vue";
 
 export default {
   data() {
-    return {
-      title: "Hello world",
-    };
+    return {};
   },
 
-  // components: {
-  //   MyComponent,
-  // },
+  components: {
+    ProjectCard,
+  },
 };
 </script>
 
 <template>
-  <h1>{{ title }}</h1>
+  <h1>Dettaglio Progetto</h1>
+  <ProjectCard />
 </template>
 
 <style lang="scss" scoped></style>
